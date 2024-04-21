@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuderías de Fórmula 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para la imagen principal */
+        .main-image {
+            width: 100%; /* Ancho al 100% */
+            height: auto;
+            display: block;
+            margin: 0; /* Elimina cualquier margen */
+            padding: 0; /* Elimina cualquier relleno */
+            object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+        }
+
+        /* Estilos para el contenedor de las tarjetas */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilos para las tarjetas de escuderías */
+        .card {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .card img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Escuderías de Fórmula 1</h1>
+</header>
+
+<!-- Primera imagen -->
+<img class="main-image" src="F1.jpg" alt="Automóvil de F1">
+
+<!-- Contenedor de las tarjetas de escuderías -->
+<div class="card-container">
+
+    <div class="card">
+        <h2 style="color: #8C0808; font-size: medium;"><i><b>Scuderia Ferrari</b></i></h2>
+        <p style="text-align: justify; font-size: small;"><i>Scuderia Ferrari</i> es un equipo de origen italiano con sede en Maranello, Italia. Es la escudería oficial del fabricante de automóviles Ferrari. Es la entidad con más historia en la Fórmula 1, con un legado que se remonta a la temporada inaugural de 1950 y cuenta con un palmarés compuesto por 16 títulos del Mundial de Constructores y títulos del Mundial de Pilotos.</p>
+        <img style="margin: 0; width: 80%;" src="Fernando_Alonso_Ferrari.jpg" alt="Ferrari">
+    </div>
+
+    <div class="card">
+        <h2 style="color: #024059; font-size: medium;"><i><b>Aston Martin</b></i></h2>
+        <p style="text-align: justify; font-size: small;"><i>Aston Martin Aramco Team</i> es un equipo privado de origen británico con sede en Silverstone, Gran Bretaña. El equipo volvió a la Fórmula 1 60 años después, cosechando buenos éxitos en sports-prototipos, incluidas victorias de clase en Le Mans. Es propiedad del canadiense Lawrence Stroll y tiene como pilotos a Fernando Alonso y Lawrence Stroll desde la temporada 2023.</p>
+        <img style="margin: 0; width: 80%;" src="Fernando_Alonso_Aston-Martin.jpg" alt="Aston Martin">
+    </div>
+
+    <div class="card">
+        <h2 style="color: #061726; font-size: medium;"><i><b>Red Bull Racing</b></i></h2>
+        <p style="font-size: small; text-align: justify;"><i>Red Bull Racing</i> es un equipo privado de origen austríaco con sede en Milton Keynes, en Gran Bretaña. 
+            Con Sebastian Vettel al volante y Adrian Newey en la mesa de diseño, aprovechó una nueva generación del Reglamento Técnico para crear 
+            una dinastía de monoplazas que pasó a la historia por su excelencia aerodinámica y su extrema eficacia..</p>
+            <img style="margin: 0; width: 80%;" src="Red_Bull_Racing_F1.jpg" alt="Red Bull Racing">
+    </div>
+</div>
+<p style="font-size: medium; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 10px;"> Te gustaría conocer dónde se encuentran las localizaciones de las diferentes escuderías?</p>
+<button onclick="document.location='mapainteractivo.html'" style="color: rgb(36, 111, 177); margin-left: 10px;">Mapa</button>
+<br>
+<br>
+</body>
+</html>
+
+
+
