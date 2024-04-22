@@ -12,6 +12,70 @@
             margin: 0;
             padding: 0;
         }
+        /* Estilos para el encabezado */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        /* Estilos para el menú */
+        nav {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Estilos para el menú desplegable */
+        .menu-toggle {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+            
+            ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            ul li {
+                display: block;
+                margin: 0;
+                text-align: center;
+            }
+
+            ul li a {
+                font-size: 16px;
+            }
+
+            .menu-toggle:checked + ul {
+                display: block;
+            }
+        }
 
         /* Estilos para la imagen principal */
         .main-image {
@@ -52,6 +116,14 @@
 <body>
 
 <header>
+    <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
     <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Escuderías de Fórmula 1</h1>
 </header>
 
@@ -85,6 +157,7 @@
 <button onclick="document.location='mapainteractivo.html'" style="color: rgb(36, 111, 177); margin-left: 10px;">Mapa</button>
 <br>
 <br>
+
 </body>
 </html>
 
