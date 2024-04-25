@@ -104,25 +104,36 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             background-color: #f9f9f9;
+            display: flex; /* Mostrar como flexbox */
+            flex-direction: column; /* Alinear verticalmente */
+            justify-content: center; /* Centrar verticalmente */
+        }
+
+        .card p {
+            overflow: hidden; /* Ocultar el texto que exceda el contenedor */
+            text-align: justify; /* Alinear el texto justificado */
+            margin-bottom: 10px; /* Añadir margen inferior */
         }
 
         .card img {
             width: 80%;
             height: auto;
             margin-bottom: 15px;
+            align-self: center; /* Alinear la imagen al centro */
         }
-        
+
     </style>
 </head>
 <body style="background-color: #d0d6d8;">
 
 <header>
+
     <nav>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <ul>
-            <li><a href="paginaprincipalcopy.html">Inicio</a></li>
+            <li><a href="paginaprincipalcopia.html">Inicio</a></li>
             <li><a href="acercade.html">Acerca de</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="mapainteractivo.html">Mapa</a></li>
         </ul>
     </nav>
     <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Escuderías de Fórmula 1</h1>
@@ -135,38 +146,47 @@
 <div class="card-container">
 
     <div class="card">
-        <h2 style="color: #8C0808; font-size: medium;"><i><b>Scuderia Ferrari</b></i></h2>
-        <p style="text-align: justify; font-size: small;"><i>Scuderia Ferrari</i> es un equipo de origen italiano con sede en Maranello, Italia. Es la escudería oficial del fabricante de automóviles Ferrari. Es la entidad con más historia en la Fórmula 1, con un legado que se remonta a la temporada inaugural de 1950 y cuenta con un palmarés compuesto por 16 títulos del Mundial de Constructores y títulos del Mundial de Pilotos.</p>
-        <img style="margin: 0; width: 80%;" src="Fernando_Alonso_Ferrari.jpg" alt="Ferrari">
+        <h2 style="color: #8c0808; font-size: medium;"><i><b>Scuderia Ferrari</b></i></h2>
+        <p style="font-size: 14px;"><i>Scuderia Ferrari</i> con sede en Maranello,Italia,es la escuderia oficial de Ferrari, destacada por su rica historia en Fórmula 1 desde 1950. Con 16 títulos del Mundial de Constructores y 15 del Mundial de Pilotos,
+        es una de las entidades más exitosas en la historia del deporte.</p>
+        <img src="ALONSO_F1_FERRARI.jpg" alt="Ferrari">
+        <p style="text-align: right;"><a href="http://127.0.0.1:3000/Ferrari.html" id="enlace-ferrari" title="Más información">Más información</a></p>
     </div>
 
     <div class="card">
         <h2 style="color: #024059; font-size: medium;"><i><b>Aston Martin</b></i></h2>
-        <p style="text-align: justify; font-size: small;"><i>Aston Martin Aramco Team</i> es un equipo privado de origen británico con sede en Silverstone, Gran Bretaña. El equipo volvió a la Fórmula 1 60 años después, cosechando buenos éxitos en sports-prototipos, incluidas victorias de clase en Le Mans. Es propiedad del canadiense Lawrence Stroll y tiene como pilotos a Fernando Alonso y Lawrence Stroll desde la temporada 2023.</p>
-        <img style="margin: 0; width: 80%;" src="Fernando_Alonso_Aston-Martin.jpg" alt="Aston Martin">
+        <p style="font-size: 14px;"><i>Aston Martin Aramco Team</i> con base en Silverstone, Gran Bretaña, es un equipo privado británico que volvió a la Fórmula 1 después de 60 años con notables logros, incluyendo una victoria en Le Mans.
+        Propiedad de Lawrence Stroll, cuenta con Fernando Alonso y Lawrence Stroll como pilotos desde 2023.</p>
+        <img src="ALONSO_F1_ASTON_MARTIN.jpg" alt="Aston Martin">
+        <p style="text-align: right;"><a href="http://127.0.0.1:3000/AstonMartin.html" id="enlace-aston" title="Más información">Más información</a></p>
     </div>
 
     <div class="card">
         <h2 style="color: #061726; font-size: medium;"><i><b>Red Bull Racing</b></i></h2>
-        <p style="font-size: small; text-align: justify;"><i>Red Bull Racing</i> es un equipo privado de origen austríaco con sede en Milton Keynes, en Gran Bretaña. 
-            Con Sebastian Vettel al volante y Adrian Newey en la mesa de diseño, aprovechó una nueva generación del Reglamento Técnico para crear 
-            una dinastía de monoplazas que pasó a la historia por su excelencia aerodinámica y su extrema eficacia..</p>
-            <img style="margin: 0; width: 80%;" src="Red_Bull_Racing_F1.jpg" alt="Red Bull Racing">
+        <p style="font-size: 14px;"><i>Red Bull </i> es un equipo privado de origen austríaco con sede en Gran Bretaña. Bajo el diseño de Adrian Newey, ha establecido una dinastía de 
+        monoplazas icónicos gracias a su excepcional diseño aerodinámico. Actualmente, Max Verstappen y Checo Pérez son los pilotos oficiales del equipo.</p>
+        <img src="VERSTAPPEN_F1_RED_BULL.jpeg" alt="Red Bull">
+        <p style="text-align: right;"><a href="http://127.0.0.1:3000/RedBull.html" id="enlace-redbull" title="Más información">Más información</a></p>
     </div>
 </div>
 <br>
-<!-- Segunda imagen -->
-<img class="main-image" src="F1 INSIDER DESCUBRIENDO LAS ESCUDERÍAS.png" alt="Automóvil de F1">
-<br>
-<p style="font-size:larger; font-family:monospace; margin-left: 10px;"> Te gustaría conocer dónde se encuentran las localizaciones de las diferentes escuderías?></p>
-<button onclick="document.location='mapainteractivo.html'" style="color: rgb(36, 111, 177); margin-left: 10px;">Mapa</button>
-<br>
-<br>
-<!-- Contenedor de imágenes centradas -->
-<div class="image-container" style="text-align: center;">
-    <a href="ferrari.html"><img src="ferrari-logo-300x300.png"></a>
-    <a href="astonmartin.html"><img src="aston-martin-logo-.png"></a>
-    <a href="redbull.html"><img src="logo_red_bull.png"></a>
-</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Correo electrónico: info@tupáginaweb.com</p>
+            <p>Teléfono: 123-456-7890</p>
+            <P>Dirección: Calle ficticia, Ciudad imaginaria</P>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Derechos de Autor</h3>
+            <p>&copy; 2024 Escuderías de F1. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
+
