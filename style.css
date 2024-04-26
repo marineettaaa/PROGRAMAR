@@ -1,22 +1,21 @@
-/* Estilos para el enlace "Más información" de la tarjeta Ferrari */
-#enlace-ferrari:visited {
-    color: #8c0808;
+#enlace-ferrari {
+    color: #F20505; /* Cambia el color normal del enlace */
 }
 
 #enlace-ferrari:hover {
-    color: #F2CB05;
+    color: 
+    #F2CB05; /* Cambia el color al pasar el ratón sobre el enlace */
 }
 
-/* Estilos para el enlace "Más información" de la tarjeta Aston Martin */ 
-#enlace-aston:visited {
-    color: #024059; /* Cambia el color cuando el enlace ha sido visitado */
+#enlace-aston {
+    color: #024059; /* Cambia el color normal del enlace */
 }
 
 #enlace-aston:hover {
-    color: orangered; /* Cambia el color al pasar el ratón sobre el enlace */
+    color: 
+    pink; /* Cambia el color al pasar el ratón sobre el enlace */
 }
 
-/* Estilos para el enlace "Más información" de la tarjeta Red Bull */
 #enlace-redbull {
     color: #292D73; /* Cambia el color normal del enlace */
 }

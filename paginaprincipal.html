@@ -121,7 +121,38 @@
             margin-bottom: 15px;
             align-self: center; /* Alinear la imagen al centro */
         }
-
+/* Estilos CSS para el formulario */
+body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    input[type="email"] {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 80%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
     </style>
 </head>
 <body style="background-color: #d0d6d8;">
@@ -131,7 +162,7 @@
     <nav>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <ul>
-            <li><a href="paginaprincipalcopia.html">Inicio</a></li>
+            <li><a href="paginaprincipal.html">Inicio</a></li>
             <li><a href="acercade.html">Acerca de</a></li>
             <li><a href="mapainteractivo.html">Mapa</a></li>
         </ul>
@@ -150,7 +181,7 @@
         <p style="font-size: 14px;"><i>Scuderia Ferrari</i> con sede en Maranello,Italia,es la escuderia oficial de Ferrari, destacada por su rica historia en Fórmula 1 desde 1950. Con 16 títulos del Mundial de Constructores y 15 del Mundial de Pilotos,
         es una de las entidades más exitosas en la historia del deporte.</p>
         <img src="ALONSO_F1_FERRARI.jpg" alt="Ferrari">
-        <p style="text-align: right;"><a href="http://127.0.0.1:3000/Ferrari.html" id="enlace-ferrari" title="Más información">Más información</a></p>
+        <p style="text-align: right;"><a href="http://127.0.0.1:3000/Ferrari.html" id="enlace-ferrari" title="Más información"><br>Más información</a></p>
     </div>
 
     <div class="card">
@@ -170,7 +201,6 @@
     </div>
 </div>
 <br>
-
 <footer>
     <div class="footer-container">
         <div class="footer-section">
@@ -182,11 +212,20 @@
         
         <div class="footer-section">
             <h3>Derechos de Autor</h3>
-            <p>&copy; 2024 Escuderías de F1. Todos los derechos reservados.</p>
+            <p>&copy; 2024 PitStopPro. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Suscríbete a nuestro boletín de noticias</h3>
+            <form action="#" method="post">
+                <label for="email" style="color: black;">Correo electrónico:</label>
+                <br>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                <input type="submit" value="Suscribirse">
+            </form>
         </div>
     </div>
 </footer>
-
 </body>
 </html>
-
