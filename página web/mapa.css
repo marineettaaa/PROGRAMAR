@@ -1,0 +1,7 @@
+#enlace-mapainteractivo {
+    color: rgb(80, 15, 141);  /* Cambia el color normal del enlace */
+}
+
+#enlace-mapainteractivo:hover {
+    color:rgb(48, 236, 104); /* Cambia el color al pasar el ratón sobre el enlace */
+}
