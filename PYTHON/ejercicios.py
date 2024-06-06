@@ -30,5 +30,9 @@ def calcular_maximo_de_tres (a:int,b:int,c:int) ->int:
         return c
     
 r_1 = calcular_maximo_de_tres(4,6,8)
+r_2 = calcular_maximo_de_tres(20,68,35)
+r_3 = calcular_maximo_de_tres(35,18,58)
 assert r_1 == 8
+assert r_2 == 68
+assert r_3 == 58
 # %%
