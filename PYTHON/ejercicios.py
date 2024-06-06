@@ -24,3 +24,11 @@ print (r_1)
 def calcular_maximo_de_tres (a:int,b:int,c:int) ->int:
     if a > b and a > c:
         return a
+    elif b > a and b > c:
+        return b
+    elif c > a and c > b:
+        return c
+    
+r_1 = calcular_maximo_de_tres(4,6,8)
+assert r_1 == 8
+# %%
